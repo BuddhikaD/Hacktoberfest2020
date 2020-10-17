@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      body {
+        align-items: center;
+        background-color: royalblue;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-family: monospace;
+        justify-content: center;
+      }
+      a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Add animations to your pages with
+      <a
+        href="https://lottiefiles.com/web-player"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Lottie</a
+      >!
+    </h1>
+  </body>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <lottie-player
+    src="https://assets1.lottiefiles.com/datafiles/HN7OcWNnoqje6iXIiZdWzKxvLIbfeCGTmvXmEm1h/data.json"
+    background="transparent"
+    speed="1"
+    style="width: 300px; height: 300px"
+    loop
+    autoplay
+  ></lottie-player>
+</html>
