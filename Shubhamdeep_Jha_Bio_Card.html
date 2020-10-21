@@ -1,0 +1,286 @@
+<html>
+  <!---  Author - Shubhamdeep Jha -->
+  <head>
+    <title>thedudethatcode | Bio-Card</title>
+
+    <!--- Default Stylesheet -->
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        color: #404142;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 800;
+        font-family: "Roboto", sans-serif;
+        text-transform: capitalize;
+        letter-spacing: -0.1px;
+        opacity: 0.7;
+      }
+      hr {
+        height: 0;
+        border: 2px solid #404142;
+        opacity: 0.1;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      a {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      a:hover,
+      a:focus,
+      a:active,
+      a:visited {
+        text-decoration: none;
+      }
+
+      /* Button for title text */
+      .btn {
+        text-transform: capitalize;
+        font-weight: 600;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        transition: all 0.6s;
+      }
+      .btn-lg {
+        padding: 5px 10px;
+        font-size: 16px;
+        line-height: none;
+        border-radius: 4px;
+      }
+
+      .btn-yellow {
+        background-color: #c0ef09;
+        color: #212322;
+        opacity: 0.8;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        transition: all 0.6s;
+      }
+      .btn-yellow:hover {
+        opacity: 0.9;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      .btn-red {
+        background-color: rgb(251, 155, 79);
+        color: #fff;
+        opacity: 0.8;
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        transition: all 0.6s;
+      }
+      .btn-red:hover {
+        opacity: 0.9;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+
+      /* div class */
+      .about {
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .about span {
+        font-size: 2em;
+        color: #016cc7;
+      }
+      .about p {
+        opacity: 0.8;
+      }
+      .about p span {
+        color: #016cc7;
+        font-size: 1em;
+        opacity: 1;
+        font-weight: bolder;
+        -webkit-transition: all 0.8s;
+        -moz-transition: all 0.8s;
+        transition: all 0.8s;
+      }
+      .about p span:hover {
+        letter-spacing: 0.1px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+      .about a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #2a2a2a;
+      }
+      .about a:hover {
+        color: #016cc7;
+      }
+      .main .about {
+        width: 31.333333%;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin-right: 20px;
+        border: 3px solid #f6f6f6;
+        border-radius: 5px;
+      }
+      .main .about:hover {
+        box-shadow: 3px 3px 10px #ccc;
+        transform: translateY(-10px);
+      }
+      /* Display picture */
+      .main-img {
+        max-width: 40%;
+        border: 4px solid #efefef;
+        border-radius: 50%;
+        -moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      .main-img:hover {
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        cursor: pointer;
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        filter: gray;
+      }
+      /* Social Media icons */
+      ul.social li {
+        list-style: none;
+        display: inline-block;
+        margin: 10px 5px;
+      }
+      ul.social li a {
+        padding: 0 10px;
+      }
+      .fa {
+        color: #016cc7;
+        opacity: 0.8;
+      }
+      .fa:hover {
+        opacity: 0.8;
+        color: #dd5138;
+      }
+
+      /* === Custom Colors of original logo=== */
+
+      .fa-linkedin:hover {
+        color: #4099ff;
+      }
+      .fa-github:hover {
+        color: #2a2a2a;
+      }
+      .fa-facebook:hover {
+        color: #3b5998;
+      }
+
+/*  ===Custom Media Queries=== */
+
+/* Mobile */
+
+@media (max-width: 767px) {
+        .main .about {
+          width: 100%;
+        }
+      }
+
+      /* iPad Portrait */
+
+      @media (min-width: 768px) and (max-width: 991px) {
+        .main .about {
+          width: 49%;
+          margin-right: 7px;
+        }
+      }
+
+      /* iPad Landscape */
+
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .main .about {
+          width: 49%;
+          margin-right: 9px;
+        }
+      }
+    </style>
+    <!-- <link href="./style.css" rel="stylesheet"> -->
+
+    <!--- Font Awesome Icons -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <center>
+        <div class="about">
+          <a href="https://www.instagram.com/thedudethatcode" target="_blank">
+            <img
+              src="https://avatars1.githubusercontent.com/u/41606999?s=460&u=fd6da4b7c16284744ddb185f535046a84a3d9d58&v=4"
+              class="main-img"
+            />
+          </a>
+          <h3><span>Shubhamdeep Jha</span></h3>
+          <button class="btn btn-lg btn-yellow">
+            Hello, Glad to see you here!
+          </button>
+          <p>
+            A budding Software Developer and a Design Enthusiast. You can view
+            my works
+            <a href="https://github.com/TheDudeThatCode" target="_blank">here</a
+            >. I love to do photography when I'm not coding. Presently I am
+            undergraduate at
+            <a href="https://www.srmist.edu.in/" target="_blank"
+              >SRM Institute of Science and technology, Kattankulatur.</a
+            >
+            <br /><span>Thank You for Visiting!</span>
+          </p>
+
+          <p>
+            Ping me at
+            <a href="mailto:thedudethatcode@gmail.com"
+              >thedudethatcode@gmail.com</a
+            >
+          </p>
+
+          <hr />
+
+          <ul class="social">
+            <li>
+              <a href="https://www.facebook.com/shubhamdeepjha" target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/TheDudeThatCode/"
+                target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/thedudethatcode" target="_blank"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </center>
+    </div>
+  </body>
+
+  <!--- Made with love by Shubhamdeep Jha -->
+</html>
