@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic tac toe</title>
+</head>
+    
+    <link rel="stylesheet" type="text/css" href="tictactoe.css">
+
+<body>
+
+	<div id="playera">Player A="O"</div>
+	<div id="playerb">Player B="X"</div>
+
+	<div id="container">
+		<div id="row">
+			<div id="block" class="b1" onclick="play1();"></div>
+			<div id="block" class="b2" style="left: 33.38%" onclick="play2();"></div>
+			<div id="block" class="b3" style="left:66.71%" onclick="play3();"></div>
+		</div>
+
+		<div id="row" style="top: 33.38%">
+			<div id="block" class="b4" onclick="play4();"></div>
+			<div id="block" class="b5" style="left: 33.38%" onclick="play5();"></div>
+			<div id="block" class="b6" style="left: 66.71%" onclick="play6();"></div>
+		</div>
+
+		<div id="row" style="top: 66.71%">
+			<div id="block" class="b7" onclick="play7();"></div>
+			<div id="block" class="b8" onclick="play8();" style="left: 33.38%"></div>
+			<div id="block" class="b9" onclick="play9();" style="left: 66.71%"></div>
+		</div>
+	</div>
+
+	<div id="result"></div>
+	<div id="result1"></div>
+
+<script type="text/javascript" src="tictactoe.js"></script>
+</body>
+</html>

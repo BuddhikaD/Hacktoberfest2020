@@ -1,0 +1,155 @@
+#container{
+	width: 400px;
+	height: 400px;
+	padding: 0px;
+	margin: 10px auto 10px auto;
+	position: relative;
+	top: 50px;
+	box-sizing: border-box;
+	border: solid 1px black;
+}
+
+#result1{
+	width: 60%;
+	height: 70px;
+	color: red;
+	text-align: center;
+	font-size: 2em;
+	box-sizing: border-box;
+	position: absolute;
+	left: 20%;
+	top: 620px;
+	border: solid 2px black;
+}
+
+#playera{
+	left: 100px;
+}
+
+#playerb{
+	right: 100px;
+}
+
+#playera,#playerb{
+	background-color: yellow;
+	width: 200px;
+	height: 70px;
+	padding: 2px;
+	margin: 0px;
+	font-size: 1.5em;
+	vertical-align: middle;
+	text-align: center;
+	position: absolute;
+	top: 150px;
+	box-sizing: border-box;
+	border: solid 1px black;
+
+}
+
+#block{
+	width: 33.33%;
+	height: 100%;
+	background-color: orange;
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+	text-align: center;
+	font-size: 5em;
+	position: absolute;
+	top: 0px;
+	left: 0.05%;
+	box-sizing: border-box;
+	border: solid 1px black;
+}
+
+#row{
+	width: 100%;
+	height: 33.33%;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	box-sizing: border-box;
+	border: solid 0.2px black;
+}
+
+#result{
+	width: 60%;
+	height: 70px;
+	background-color: yellow;
+	padding: 10px;
+	margin: 0px;
+	text-align: center;
+	font-size: 2em;
+	color: darkgreen;
+	position: absolute;
+	top: 550px;
+	left: 20%;
+	box-sizing: border-box;
+	border: solid 2px black;
+}
+
+#block:hover{
+	cursor: pointer;
+}
+
+@media(max-width: 1200px) and (min-width: 998px){
+	#container{
+		width: 400px;
+		height: 400px;
+	}
+
+	#block{
+		font-size: 6em;
+	}
+
+	#playera{
+	left: 50px;	
+	}
+
+	#playerb{
+		right: 50px;
+	}
+}
+
+@media(max-width: 997px) and (min-width: 768px){
+	#container{
+		width: 340px;
+		height: 340px;
+		top: 150px;
+	}
+
+	#block{
+		font-size: 4em;
+	}
+
+	#playera{
+	top: 50px;	
+	}
+
+	#playerb{
+		top: 50px;
+	}
+}
+
+@media(max-width: 767px){
+	#container{
+		width: 260px;
+		height: 260px;
+		top: 210px;
+	}
+
+	#block{
+		font-size: 3em;
+	}
+
+	#playera{
+	top: 50px;	
+	left: 10px;
+	}
+
+	#playerb{
+		top: 50px;
+		right: 10px;
+	}
+}
